@@ -32,4 +32,6 @@ lab.test('do seventy times seventy, using only plus operations.', (done) => {
 
     Code.expect(soma(2450, 2450)).to.equal(4900);
     done();
+
+
 });
