@@ -1,6 +1,11 @@
 'use strict';
 
-function soma(a, b) {
+function soma() {
+  if (a === undefined)
+  return {
+    message: 'parâmetros'
+  }
+
   return a + b;
 }
 
