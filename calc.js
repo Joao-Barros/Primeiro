@@ -1,12 +1,17 @@
 'use strict';
 
-function soma() {
+function soma(a, b = 0) {
   if (a === undefined)
-  return {
-    message: 'parâmetros'
-  }
+    return { message: 'parâmentos faltando'};
 
-  return a + b;
+  if (typeof a === 'string' || typeof b === 'string')
+    return { message: 'parâmentos inválidos'};
+
+  let resultado = 0;
+  for(let i = 0; i < arguments.length; i++) {
+    resultado = resultado + arguments[i];
+  }
+  return resultado;
 }
 
 module.exports = { soma };

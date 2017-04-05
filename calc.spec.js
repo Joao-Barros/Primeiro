@@ -9,29 +9,31 @@ lab.test('retorno da soma de 2 e 3 deve ser 5', (done) => {
     Code.expect(soma(2, 3)).to.equal(5);
     done();
 });
+lab.test('retorno da soma de 4 e 5 deve ser 9', (done) => {
 
-lab.test('retorno da soma de 11 e 3 deve ser 14', (done) => {
-
-    Code.expect(soma(11, 3)).to.equal(14);
+    Code.expect(soma(4, 5)).to.equal(9);
     done();
 });
+lab.test('retorno da soma de 4 e 3 deve ser 7', (done) => {
 
-lab.test('retorno da soma de 8 e 25 deve ser 33', (done) => {
-
-    Code.expect(soma(8, 25)).to.equal(33);
+    Code.expect(soma(4, 3)).to.equal(7);
     done();
 });
+lab.test('retorno da soma de -7 e -10 deve ser -17', (done) => {
 
-lab.test('the return of eigthy plus two hundred should be equal to two hundred and eigthy', (done) => {
-
-    Code.expect(soma(80, 200)).to.equal(280);
+    Code.expect(soma(-7, -10)).to.equal(-17);
     done();
 });
+lab.test('retorno da soma de -100 e -100 deve ser -200', (done) => {
 
-lab.test('do seventy times seventy, using only plus operations.', (done) => {
-
-    Code.expect(soma(2450, 2450)).to.equal(4900);
+    Code.expect(soma(-100, -100)).to.equal(-200);
     done();
+});
+var A = 1;
+var B = 2;
+var C = (A + B);
+lab.test('retorno da soma de A e B deve ser C', (done) => {
 
-
+    Code.expect(soma(A, B)).to.equal(C);
+    done();
 });
